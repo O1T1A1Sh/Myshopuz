@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Myshop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🛍️ Myshop</h1>
+  </header>
+
+  <section class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/150" alt="Mahsulot 1" />
+      <h3>Mahsulot 1</h3>
+      <p>$10</p>
+      <button onclick="addToCart('Mahsulot 1')">Savatga qo‘shish</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/150" alt="Mahsulot 2" />
+      <h3>Mahsulot 2</h3>
+      <p>$15</p>
+      <button onclick="addToCart('Mahsulot 2')">Savatga qo‘shish</button>
+    </div>
+  </section>
+
+  <section class="cart">
+    <h2>Savat 🛒</h2>
+    <ul id="cartItems"></ul>
+    <button onclick="sendToTelegram()">Telegramga yuborish</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
